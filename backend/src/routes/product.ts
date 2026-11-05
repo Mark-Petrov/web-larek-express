@@ -16,7 +16,7 @@ import {
 const productRouter = Router();
 
 productRouter.get('/', getProducts);
-productRouter.post('/', auth, celebrate({ body: productSchema }), createProduct);
+productRouter.post('/', celebrate({ body: productSchema }), createProduct);
 productRouter.patch(
   '/:productId',
   auth,
