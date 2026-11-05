@@ -24,7 +24,6 @@ export const basketSlice = createSlice({
 			state.items = state.items.filter(item => {
 				return item._id !== action.payload;
 			});
-			state.totalCount--;
 		},
 		resetBasket: () => initialState,
 	},

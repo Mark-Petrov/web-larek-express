@@ -7,7 +7,6 @@ interface IUseFormWithValidation<T> {
   handleChange: (evt: React.ChangeEvent<HTMLInputElement>) => void, 
   resetFrom: (newValues?: T, newErrors?: Partial<T>, newIsValid?: boolean) => void,
   setValuesForm: (params: Partial<T>) => void
-
 }
 
 export default function useFormWithValidation<T>(defaultValue: T, form?: HTMLFormElement| null): IUseFormWithValidation<T> {
